@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import react, {useState, useEffect} from 'react'; 
 import axios from 'axios';
+import { SendHorizontal } from 'lucide-react';
 import ScrollableContent from './componants/ScrollableContent.js';
 
 
@@ -62,7 +63,9 @@ function App() {
       <div className="flex  p-4  h-24">
       <form onSubmit={ask_question} className="flex p-4 p-2 w-full">
       <input value={question} onChange={question_changed} className="border w-full mr-8 rounded-xl"/>
-      <button type="submit" > ➡️ </button>
+      <button type="submit" >
+        <SendHorizontal />
+      </button>
       </form>
       </div>
 
